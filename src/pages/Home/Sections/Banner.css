@@ -1,0 +1,55 @@
+.banner-container {
+  height: 90vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.banner-container p {
+  font-size: 2.8rem;
+  margin: 4rem 0;
+
+  color: var(--main-color);
+}
+.banner-container .banner-details-intro {
+  text-align: center;
+}
+.banner-container .banner-details-webDeveloper {
+  color: var(--main-color);
+}
+.banner-container .banner-details-webDesigner {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--main-color);
+}
+.banner-container h1 {
+  font-size: 14.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+.banner-container .banner-more-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-container .banner-logos {
+  display: flex;
+  gap: 1.5rem;
+}
+.banner-container .banner-logos img {
+  height: auto;
+
+  width: 6.5rem;
+  object-fit: contain;
+  -webkit-filter: grayscale(95%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(95%);
+}
+.banner-container .banner-logos img:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+}
+.banner-container .banner-btns {
+  text-align: center;
+  margin-top: 6.5rem;
+}
