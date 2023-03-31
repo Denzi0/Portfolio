@@ -1,0 +1,16 @@
+.btn {
+  padding: 1.5rem 2.5rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+.btn-fill {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 0.2rem solid var(--main-color);
+}
+
+.btn-ghost {
+  background-color: none;
+  color: var(--main-color);
+  border: 0.2rem solid var(--main-color);
+}

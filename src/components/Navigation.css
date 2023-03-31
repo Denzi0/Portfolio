@@ -1,0 +1,17 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+.navigation-container .navigation-logo {
+  font-size: 4rem;
+  color: var(--main-color);
+  flex: 1;
+}
+
+.navigation-container .navigation-links a {
+  margin-right: 6rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
