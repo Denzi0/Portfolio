@@ -1,0 +1,25 @@
+.about-section {
+  height: 90vh;
+  padding: 9.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.about-section .about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  z-index: 2;
+}
+.about-container .about-details {
+  width: 40%;
+}
+.about-container .about-details-sub {
+  font-size: 2.8rem;
+  /* color: var(--gray-color); */
+}
+.about-container .about-details-icon {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}

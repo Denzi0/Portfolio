@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap");
-
-/*
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;1,400&display=swap"); /*
 
   1. Use a more-intuitive box-sizing model.
 */
@@ -9,6 +8,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --main-color: #1b1b1b;
+  --secondary-color: #ffff;
+  --selection-color: #fda228;
+  --gray-color: #c9c9c9;
 }
 /*
     2. Remove default margin
@@ -18,7 +24,24 @@
   list-style: none;
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
 /*
     3. Allow percentage-based heights in the application
   */
@@ -34,12 +57,7 @@ a {
     4. Add accessible line-height
     5. Improve text rendering
   */
-:root {
-  font-size: 62.5%;
-  --main-color: #1b1b1b;
-  --secondary-color: #ffff;
-  --selection-color: #fda228;
-}
+
 ::selection {
   background-color: var(--selection-color);
 }
@@ -82,14 +100,41 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
+img {
+  max-width: 100%;
+}
 h1 {
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Work-sans", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 6.5rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Work-sans", sans-serif;
 }
 /*
     9. Create a root stacking context
   */
-
+.transparent-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--main-color);
+}
 #root,
 #__next {
   isolation: isolate;

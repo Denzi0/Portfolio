@@ -17,13 +17,9 @@
 .banner-container .banner-details-webDeveloper {
   color: var(--main-color);
 }
-.banner-container .banner-details-webDesigner {
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--main-color);
-}
+
 .banner-container h1 {
-  font-size: 14.5rem;
+  font-size: 11.5rem;
   font-weight: 700;
   line-height: 1;
   text-align: center;
