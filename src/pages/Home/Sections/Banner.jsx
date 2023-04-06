@@ -1,6 +1,7 @@
 import "./Banner.css";
 import google from "../../../assets/images/google-icon.png";
 import um from "../../../assets/images/university-of-michigan-logo.png";
+import myimage from "../../../assets/images/user-image.jpg";
 import Button from "../../../components/Button";
 function Banner() {
   return (
@@ -12,7 +13,9 @@ function Banner() {
               👋 Hi my name is Denzel and I am a
             </p>
             <h1 className="banner-details-webDeveloper">Web Developer</h1>
-            <h1 className="banner-details-webDesigner">& Web Designer</h1>
+            <h1 className="banner-details-webDesigner transparent-text">
+              & Web Designer
+            </h1>
           </div>
           <div className="banner-more-details">
             <p className="banner-logos-based">Based On Cagayan De Oro</p>
@@ -21,6 +24,7 @@ function Banner() {
               <img src={um} alt="university of michigan logo" />
             </div>
           </div>
+          {/* <img src={myimage} /> */}
           <div className="banner-btns">
             <Button text="My Resume" buttonType={"btn-fill"} />
             <Button text="Need A Developer" buttonType={"btn-ghost"} />
