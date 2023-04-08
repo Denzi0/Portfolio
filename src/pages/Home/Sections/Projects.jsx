@@ -11,7 +11,19 @@ function Projects() {
             <span className="transparent-text">Case Studies</span>
           </h2>
         </div>
-        <div></div>
+      </div>
+      <div className="projects-tablist-container">
+        <ul className="projects-tablists">
+          <li className="projects-web-design">
+            <a href="#">Web Design</a>
+          </li>
+          <li className="projects-web-sites">
+            <a href="#">Web Sites</a>
+          </li>
+          <li className="projects-mobile-design">
+            <a href="#">Mobile App Design</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
