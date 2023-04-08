@@ -1,5 +1,5 @@
 import "./About.css";
-import image from "../../../assets/images/image.jpg";
+import image from "../../../assets/images/placeholder.png";
 import {
   FaGithubAlt,
   FaFacebookF,

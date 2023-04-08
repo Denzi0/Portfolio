@@ -127,6 +127,9 @@ h4 {
 p {
   font-family: "Work-sans", sans-serif;
 }
+a {
+  color: var(--main-color);
+}
 /*
     9. Create a root stacking context
   */
@@ -144,4 +147,15 @@ p {
   margin: 0 auto;
   max-width: 1480px;
   padding: 0 20px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.7rem;
+  background: var(--main-color);
+  transform-origin: 0%;
+  z-index: 99;
 }
