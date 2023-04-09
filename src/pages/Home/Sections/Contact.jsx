@@ -3,7 +3,7 @@ import image from "../../../assets/images/placeholder.png";
 
 function Contact() {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contact-id">
       <div className="contact-container container">
         <div className="contact-details">
           <h1 className="contact-heading">
