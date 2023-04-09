@@ -6,7 +6,7 @@ import Button from "../../../components/Button";
 function Banner() {
   return (
     <>
-      <div className="banner-container">
+      <div className="banner-container" id="banner-id">
         <div className="container">
           <div className="banner-details">
             <p className="banner-details-intro">
