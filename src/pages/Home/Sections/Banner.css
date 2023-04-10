@@ -1,10 +1,12 @@
 .banner-container {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-
+.banner-container > div {
+  cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
+}
 .banner-container p {
   font-size: 2.8rem;
   margin: 4rem 0;

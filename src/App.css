@@ -52,6 +52,15 @@ body {
 a {
   cursor: pointer;
 }
+img {
+  cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
+  transition: all 5s ease-in-out;
+}
+
+img:hover {
+  cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
+  transition: all 6s ease-in-out;
+}
 /*
     Typographic tweaks!
     4. Add accessible line-height

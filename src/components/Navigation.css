@@ -1,7 +1,7 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  min-height: 10vh;
   background-color: #fff;
   z-index: 9;
   align-items: center;

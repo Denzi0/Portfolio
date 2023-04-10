@@ -27,7 +27,7 @@ function Navigation() {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={1500}
             className="navigation-logo"
           >
             DenzeL.
@@ -39,7 +39,7 @@ function Navigation() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1500}
                 className="navigation-item"
               >
                 About
@@ -49,7 +49,7 @@ function Navigation() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1500}
                 className="navigation-item"
               >
                 Projects
@@ -59,7 +59,7 @@ function Navigation() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1500}
                 className="navigation-item"
               >
                 Contact
