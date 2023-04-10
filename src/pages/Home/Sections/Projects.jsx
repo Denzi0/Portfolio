@@ -1,30 +1,52 @@
+import Tabs from "../../../components/Tabs";
 import "./Projects.css";
+import webDesign1 from "../../../assets/images/FURCARE.png";
+import webDesign2 from "../../../assets/images/FURCARE.png";
 
 function Projects() {
+  const tabs = [
+    {
+      id: 1,
+      title: "Web Design",
+      content: "This is tab 1 content",
+      webDesign: [
+        {
+          image: webDesign1,
+          content: "lorem2 sdfs dfsdf sdf",
+        },
+        {
+          image: webDesign2,
+          content: "lorem2 sdfs dfsdf sdf",
+        },
+        {
+          image: webDesign1,
+          content: "lorem2 sdfs dfsdf sdf",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Live Web Sites",
+      content: "This is tab 2 content",
+    },
+    {
+      id: 3,
+      title: "Mobile App Design",
+      content: "This is tab 3 content",
+    },
+  ];
+
   return (
     <div className="projects-section" id="projects-id">
       <div className="container projects-container">
         <div className="projects-details">
-          {/* <p className="projects-details-sub">My Web Development Journey</p> */}
           <h2>
             Projects & <br />
             <span className="transparent-text">Case Studies</span>
           </h2>
         </div>
       </div>
-      <div className="projects-tablist-container">
-        <ul className="projects-tablists">
-          <li className="projects-web-design">
-            <a href="#">Web Design</a>
-          </li>
-          <li className="projects-web-sites">
-            <a href="#">Web Sites</a>
-          </li>
-          <li className="projects-mobile-design">
-            <a href="#">Mobile App Design</a>
-          </li>
-        </ul>
-      </div>
+      <Tabs tabs={tabs} />
     </div>
   );
 }
