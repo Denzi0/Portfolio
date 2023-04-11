@@ -1,8 +1,6 @@
 .footer-section {
   text-align: center;
   height: 5vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--main-color);
-  color: #fff;
+
+  color: var(--main-color);
 }

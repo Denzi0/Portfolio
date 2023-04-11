@@ -14,6 +14,7 @@
   --main-color: #1b1b1b;
   --secondary-color: #ffff;
   --selection-color: #fda228;
+  --yellow-color: #fda228;
   --gray-color: #c9c9c9;
 }
 /*
@@ -167,4 +168,27 @@ a {
   background: var(--main-color);
   transform-origin: 0%;
   z-index: 99;
+}
+/* ### Flex Container on classes (Reusable Class) ###*/
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.flex-container-vertical {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-between;
+}
+/* ### Button style global ### */
+.btn {
+  padding: 1.5rem 2.5rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+}
+.btn:hover {
+  padding: 1.5rem 4.5rem;
 }
