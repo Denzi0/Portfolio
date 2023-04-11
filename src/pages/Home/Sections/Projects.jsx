@@ -37,8 +37,8 @@ function Projects() {
   ];
 
   return (
-    <div className="projects-section" id="projects-id">
-      <div className="container projects-container">
+    <div className="projects-section flex-container-vertical" id="projects-id">
+      <div className="container projects-container flex-container">
         <div className="projects-details">
           <h2>
             Projects & <br />

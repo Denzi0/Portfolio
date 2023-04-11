@@ -1,13 +1,8 @@
 .about-section {
   height: 90vh;
   padding: 9.5rem 0;
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 .about-section .about-container {
-  display: flex;
-  justify-content: space-between;
   gap: 8rem;
   z-index: 2;
 }
@@ -15,8 +10,10 @@
   width: 100%;
 }
 .about-container .about-details-sub {
-  font-size: 2.8rem;
-  /* color: var(--gray-color); */
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+  color: var(--yellow-color);
+  text-transform: uppercase;
 }
 .about-container .about-details-icon {
   display: flex;

@@ -6,7 +6,7 @@ import Button from "../../../components/Button";
 function Banner() {
   return (
     <>
-      <div className="banner-container" id="banner-id">
+      <div className="banner-container flex-container" id="banner-id">
         <div className="container">
           <div className="banner-details">
             <p className="banner-details-intro">
@@ -17,7 +17,7 @@ function Banner() {
               & Web Designer
             </h1>
           </div>
-          <div className="banner-more-details">
+          <div className="banner-more-details flex-container">
             <p className="banner-logos-based">Based On Cagayan De Oro</p>
             <div className="banner-logos">
               <img src={google} alt="google logo" />
@@ -26,8 +26,8 @@ function Banner() {
           </div>
           {/* <img src={myimage} /> */}
           <div className="banner-btns">
-            <Button text="My Resume" buttonType={"btn-fill"} />
-            <Button text="Need A Developer" buttonType={"btn-ghost"} />
+            <Button text="Discover my work" buttonType={"btn-fill"} />
+            <Button text="Need A Developer ?" buttonType={"btn-ghost"} />
           </div>
         </div>
       </div>

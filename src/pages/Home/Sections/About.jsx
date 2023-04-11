@@ -10,8 +10,8 @@ import {
 function About() {
   return (
     <>
-      <div className="about-section" id="about-id">
-        <div className="container about-container">
+      <div className="about-section flex-container" id="about-id">
+        <div className="container about-container flex-container">
           <div className="about-details">
             <p className="about-details-sub">My Web Development Journey</p>
             <h2>

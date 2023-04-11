@@ -28,6 +28,7 @@ function Navigation() {
             smooth={true}
             offset={0}
             duration={1500}
+            activeClass="active"
             className="navigation-logo"
           >
             DenzeL.
@@ -40,6 +41,7 @@ function Navigation() {
                 smooth={true}
                 offset={-70}
                 duration={1500}
+                activeClass="active"
                 className="navigation-item"
               >
                 About
@@ -50,6 +52,7 @@ function Navigation() {
                 smooth={true}
                 offset={-70}
                 duration={1500}
+                activeClass="active"
                 className="navigation-item"
               >
                 Projects
@@ -60,6 +63,7 @@ function Navigation() {
                 smooth={true}
                 offset={-70}
                 duration={1500}
+                activeClass="active"
                 className="navigation-item"
               >
                 Contact

@@ -37,7 +37,6 @@ function Tabs({ tabs }) {
             ) : (
               <p>{tab.content}</p>
             )}
-            {console.log(tab.webDesign)}
           </div>
         ))}
       </div>
