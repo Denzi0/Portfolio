@@ -3,11 +3,7 @@
   padding: 9.5rem 0;
   position: relative;
 }
-.projects-section .projects-container {
-  gap: 8rem;
-  z-index: 2;
-  position: relative;
-}
+
 .projects-container .projects-details {
   text-align: center;
 }
@@ -15,13 +11,12 @@
   font-size: 2.8rem;
   color: var(--gray-color);
 }
-
-.projects-section .projects-tablists {
-  display: flex;
-  margin-top: 2rem;
-  gap: 6rem;
+.projects-section .projects-sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+  color: var(--yellow-color);
+  text-transform: uppercase;
 }
-
 .projects-section .projects-tab {
   cursor: pointer;
 }
@@ -34,43 +29,59 @@
 .projects-section .projects-content img {
   object-fit: cover;
 }
-.projects-section .projects-content .project-images {
+.projects-section .projects-tablists {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
 }
-.projects-section .projects-content .project-image:nth-child(odd) {
-  margin-top: 10rem;
-}
-
 .projects-section .projects-content .project-image {
   display: block;
   height: 50.5rem;
-  width: 45rem;
   overflow: hidden;
   position: relative;
   border-radius: 1px;
-  margin: 0 auto;
+
+  margin: 1rem;
 }
 .projects-section .projects-content .project-image img {
-  bottom: -1040px;
+  bottom: -1690px;
   width: 100%;
   height: auto;
   position: absolute;
   z-index: 0;
   margin: 0;
   padding: 0;
-  -webkit-transition: top 11s;
+  /* -webkit-transition: top 11s;
   -moz-transition: top 11s;
   -ms-transition: top 11s;
   -o-transition: top 11s;
-  transition: bottom 11s;
+  transition: bottom 11s; */
 }
 .projects-section .projects-content .project-image:hover img {
   bottom: 0;
-  -webkit-transition: all 11s;
+  /* -webkit-transition: all 11s;
   -moz-transition: all 11s;
   -ms-transition: all 11s;
   -o-transition: all 11s;
-  transition: all 11s;
+  transition: all 11s; */
+}
+
+.projects-section .project-description {
+  position: absolute;
+  bottom: 0;
+  height: 9rem;
+  width: 40rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+.projects-section .projects-arrow-left,
+.projects-section .projects-arrow-right {
+  background-color: var(--main-color);
+  display: inline-block;
+  color: #fff;
+  padding: 20px;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
 }
