@@ -6,7 +6,8 @@
   gap: 8rem;
   z-index: 2;
 }
-.about-container .about-details {
+.about-container .about-details,
+.about-container .about-image {
   width: 100%;
 }
 .about-container .about-details-sub {
@@ -19,4 +20,7 @@
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+}
+.about-container .about-image img {
+  height: 60rem;
 }

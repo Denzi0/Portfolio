@@ -18,7 +18,7 @@ function Banner() {
             </h1>
           </div>
           <div className="banner-more-details flex-container">
-            <p className="banner-logos-based">Based On Cagayan De Oro</p>
+            <p className="banner-logos-based">Based On Philippines</p>
             <div className="banner-logos">
               <img src={google} alt="google logo" />
               <img src={um} alt="university of michigan logo" />

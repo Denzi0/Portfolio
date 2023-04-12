@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home/index";
 import { motion, useScroll, useSpring } from "framer-motion";
+
 function App() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
