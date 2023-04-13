@@ -1,10 +1,17 @@
 import "./Button.css";
-
-function Button({ text, buttonType, url }) {
+import { Link } from "react-scroll";
+function Button({ text, buttonType, url, children }) {
   return (
-    <a href={`${url}`} className={`btn ${buttonType}`}>
-      {text}
-    </a>
+    <Link
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={1500}
+      to={`${url}`}
+      className={`btn ${buttonType}`}
+    >
+      {children}
+    </Link>
   );
 }
 

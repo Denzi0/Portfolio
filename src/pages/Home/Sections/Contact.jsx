@@ -1,6 +1,8 @@
 import "./Contact.css";
 import image from "../../../assets/images/placeholder.png";
-
+import Input from "../../../components/Input";
+import TextArea from "../../../components/TextArea";
+import SubmitButton from "../../../components/SubmitButton";
 function Contact() {
   return (
     <div className="contact-section" id="contact-id">
@@ -16,25 +18,21 @@ function Contact() {
         <div className="contact-form">
           <form>
             <div className="form-col-1">
-              <div className="form-control">
-                <label id="fname">
-                  <small>Full name</small>
-                </label>
-                <input type="text" value="" id="fname" />
-              </div>
-              <div className="form-control">
-                <label id="email">
-                  <small>Email</small>
-                </label>
-                <input type="email" value="" id="email" />
-              </div>
+              <Input labelID="fname" inputType="text">
+                Full name
+              </Input>
+              <Input labelID="email" inputType="email">
+                Email
+              </Input>
             </div>
-            <div className="form-control">
-              <label id="message">
-                <small>Message</small>
-              </label>
-              <textarea value="" id="message" />
-            </div>
+            <TextArea
+              labelName="Message"
+              labelID="message"
+              inputType="textarea"
+            />
+            <SubmitButton buttonClass="btn btn-submit">
+              Submit Message
+            </SubmitButton>
           </form>
         </div>
       </div>

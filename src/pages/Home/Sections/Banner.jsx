@@ -26,8 +26,12 @@ function Banner() {
           </div>
           {/* <img src={myimage} /> */}
           <div className="banner-btns">
-            <Button text="Discover my work" buttonType={"btn-fill"} />
-            <Button text="Need A Developer ?" buttonType={"btn-ghost"} />
+            <Button buttonType={"btn-fill"} url="projects-id">
+              Discover my work
+            </Button>
+            <Button buttonType={"btn-ghost"} url="contact-id">
+              Need A Developer ?
+            </Button>
           </div>
         </div>
       </div>

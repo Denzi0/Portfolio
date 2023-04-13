@@ -70,11 +70,9 @@ function Navigation() {
               </Link>
             </ul>
           </div>
-          <Button
-            url="tel:09262133932"
-            text="Let's Talk !"
-            buttonType={"btn-fill"}
-          />
+          <Button url="tel:09262133932" buttonType={"btn-fill"}>
+            Let's Talk !
+          </Button>
         </div>
       </div>
     </>

@@ -1,0 +1,7 @@
+.btn-submit {
+  width: 100%;
+  background-color: var(--main-color);
+  color: #fff;
+  outline: none;
+  border: none;
+}

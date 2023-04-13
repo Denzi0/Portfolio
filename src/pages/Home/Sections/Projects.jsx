@@ -1,6 +1,6 @@
 import "./Projects.css";
-import webDesign1 from "../../../assets/images/FURCARE.png";
-import webDesign2 from "../../../assets/images/FURCARE.png";
+import webDesign1 from "../../../assets/images/web-design.jpg";
+import webDesign2 from "../../../assets/images/web-design.jpg";
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -23,12 +23,12 @@ function Projects() {
         },
         {
           image: webDesign2,
-          content: "lorem2 sdfs dfsdf sdf",
+          content: "BTA",
           description: "lorem ipsum dolor sit amet, consectetur",
         },
         {
           image: webDesign2,
-          content: "lorem2 sdfs dfsdf sdf",
+          content: "STAKE",
           description: "lorem ipsum dolor sit amet, consectetur",
         },
         {
@@ -80,25 +80,8 @@ function Projects() {
     customeSlider.current.slickPrev();
   };
   return (
-    <div className="projects-section" id="projects-id">
-      <div className="container">
-        <p className="projects-sub">This is the projects</p>
-        <h2>
-          Projects <span className="transparent-text">I Work </span>With
-        </h2>
-        <ul className="projects-tablists">
-          {tabs.map((tab, index) => (
-            <li
-              onClick={() => handleTabClick(index)}
-              key={tab.id}
-              className={`projects-tab ${
-                index === activeIndex ? "active" : ""
-              }`}
-            >
-              {tab.title}
-            </li>
-          ))}
-        </ul>
+    <div className="projects-section container" id="projects-id">
+      <div className="projects-details">
         <a className="projects-arrow-left" onClick={next}>
           <FaChevronLeft />
         </a>
@@ -106,29 +89,27 @@ function Projects() {
           <FaChevronRight />
         </a>
       </div>
-
       <div className="projects-content">
         {tabs.map((tab, index) => (
           <div key={index} className={index === activeIndex ? "active" : ""}>
             {tab.content}
             {tab.webDesign ? (
-              <>
-                <div className="project-images">
-                  <Slider {...settings} ref={customeSlider}>
-                    {tab.webDesign.map((webDesign, index) => (
-                      <div>
-                        <div key={index} className="project-image">
-                          <img src={webDesign.image} alt="" />
-                        </div>
-                        <div className="project-description">
-                          <h3>{webDesign.content}</h3>
-                          <p>{webDesign.description}</p>
-                        </div>
+              <div className="project-images">
+                {/* <img src={webDesign1} alt="" /> */}
+                <Slider {...settings} ref={customeSlider}>
+                  {tab.webDesign.map((webDesign, index) => (
+                    <div>
+                      <div key={index} className="project-image">
+                        <img src={webDesign.image} alt="" />
                       </div>
-                    ))}
-                  </Slider>
-                </div>
-              </>
+                      <div className="project-description">
+                        <h3>{webDesign.content}</h3>
+                        <p>{webDesign.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
             ) : (
               <p>{tab.content}</p>
             )}
