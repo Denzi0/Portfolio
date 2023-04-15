@@ -56,8 +56,14 @@ function About() {
               <code>Wordpress Builders</code>
             </div>
             <div className="about-live-sites">
-              <h3>Total Lived Sites</h3>
-              <p className="number">10</p>
+              <div className="card">
+                <p>Lived Sites</p>
+                <p className="number">10</p>
+              </div>
+              <div className="card">
+                <p>Projects</p>
+                <p className="number">15</p>
+              </div>
             </div>
           </div>
         </div>
