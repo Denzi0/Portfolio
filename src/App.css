@@ -57,12 +57,10 @@ a {
 }
 img {
   cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
-  transition: all 5s ease-in-out;
 }
 
 img:hover {
   cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
-  transition: all 6s ease-in-out;
 }
 /*
     Typographic tweaks!
@@ -127,7 +125,7 @@ h6 {
 }
 
 h2 {
-  font-size: 6.5rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 h3 {
@@ -141,6 +139,18 @@ p {
 }
 a {
   color: var(--main-color);
+}
+code {
+  background: #e7e7e7;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.7rem;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
+}
+code:hover {
+  background-color: var(--yellow-color);
+  color: #fff;
+  cursor: pointer;
 }
 /*
     9. Create a root stacking context
