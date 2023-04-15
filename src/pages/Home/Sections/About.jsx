@@ -1,5 +1,5 @@
 import "./About.css";
-import image from "../../../assets/images/placeholder.png";
+import image from "../../../assets/images/placeholder2.webp";
 import {
   FaGithubAlt,
   FaFacebookF,
@@ -15,7 +15,7 @@ function About() {
           <div className="about-details">
             <p className="about-details-sub">My Web Development Journey</p>
             <h2>
-              Web <span className="transparent-text">Dev</span> & <br />
+              Web <span className="transparent-text">Dev</span> and <br />
               Design <span className="transparent-text">Expertise</span>
             </h2>
             <p className="about-more-details">
@@ -33,6 +33,32 @@ function About() {
           </div>
           <div className="about-image">
             <img src={image}></img>
+          </div>
+          <div className="about-details2">
+            <p className="about-details-sub">Technical and Soft Skills</p>
+            <h2>
+              My
+              <span className="transparent-text"> Skills</span> and Web
+              <span className="transparent-text"> Experience</span>
+            </h2>
+            <div className="about-skills-list">
+              <code>HTML</code>
+              <code>Css</code>
+              <code>Bootstrap</code>
+              <code>Tailwind</code>
+              <code>Javascript</code>
+              <code>React</code>
+              <code>Vue</code>
+              <code>Laravel</code>
+              <code>MySQL</code>
+
+              <code>Wordpress</code>
+              <code>Wordpress Builders</code>
+            </div>
+            <div className="about-live-sites">
+              <h3>Total Lived Sites</h3>
+              <p className="number">10</p>
+            </div>
           </div>
         </div>
       </div>
