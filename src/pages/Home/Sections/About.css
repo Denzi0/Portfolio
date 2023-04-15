@@ -1,0 +1,46 @@
+.about-section {
+  height: 90vh;
+  padding: 9.5rem 0;
+}
+.about-section .about-container {
+  gap: 8rem;
+  z-index: 2;
+}
+.about-container .about-details,
+.about-container .about-details2,
+.about-container .about-image {
+  width: 100%;
+  flex-grow: 1;
+}
+.about-container .about-details-sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+  color: var(--yellow-color);
+  text-transform: uppercase;
+}
+.about-container .about-details-icon {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.about-container .about-image img {
+  height: 50rem;
+  object-fit: cover;
+}
+.about-container .about-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.about-container .about-live-sites {
+  margin-top: 3rem;
+}
+.about-container .about-live-sites .number {
+  font-size: 4rem;
+}
+.about-container .about-details {
+  margin-bottom: 20rem;
+}
+.about-container .about-details2 {
+  margin-top: 20rem;
+}

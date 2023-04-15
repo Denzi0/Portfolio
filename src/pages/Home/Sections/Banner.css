@@ -1,14 +1,14 @@
 .banner-container {
-  height: 90vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  min-height: 90vh;
 }
 
+/* ### Changed cursor to image when hover on banner container #### */
+.banner-container > div {
+  cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
+}
 .banner-container p {
   font-size: 2.8rem;
   margin: 4rem 0;
-
   color: var(--main-color);
 }
 .banner-container .banner-details-intro {
@@ -17,29 +17,20 @@
 .banner-container .banner-details-webDeveloper {
   color: var(--main-color);
 }
-.banner-container .banner-details-webDesigner {
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--main-color);
-}
+
 .banner-container h1 {
-  font-size: 14.5rem;
+  font-size: 11.5rem;
   font-weight: 700;
   line-height: 1;
   text-align: center;
 }
-.banner-container .banner-more-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .banner-container .banner-logos {
   display: flex;
   gap: 1.5rem;
 }
 .banner-container .banner-logos img {
   height: auto;
-
   width: 6.5rem;
   object-fit: contain;
   -webkit-filter: grayscale(95%); /* Safari 6.0 - 9.0 */

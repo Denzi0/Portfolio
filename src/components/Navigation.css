@@ -1,8 +1,27 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  min-height: 10vh;
+  background-color: #fff;
+  z-index: 9;
   align-items: center;
+}
+
+.navigation-container.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: slide-down 0.5s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 .navigation-container .navigation-logo {
   font-size: 4rem;
