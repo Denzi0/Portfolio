@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import IconLink from "../../../components/IconLink";
 
 function About() {
   return (
@@ -25,10 +26,18 @@ function About() {
               user-friendly, visually appealing websites from start to finish.
             </p>
             <div className="about-details-icon">
-              <FaGithubAlt />
-              <FaFacebookF />
-              <FaLinkedinIn />
-              <FaTwitter />
+              <IconLink iconUrl="#">
+                <FaFacebookF />
+              </IconLink>
+              <IconLink>
+                <FaTwitter />
+              </IconLink>
+              <IconLink iconUrl="https://www.linkedin.com/in/denzel-lanzaderas-47a9a5212/">
+                <FaLinkedinIn />
+              </IconLink>
+              <IconLink iconUrl="https://github.com/Denzi0">
+                <FaGithubAlt />
+              </IconLink>
             </div>
           </div>
           <div className="about-image">
