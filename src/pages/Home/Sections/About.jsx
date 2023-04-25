@@ -5,10 +5,18 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
+  FaCircle,
 } from "react-icons/fa";
 import IconLink from "../../../components/IconLink";
+import { useState } from "react";
+import Sidebar from "../../../components/Sidebar";
 
 function About() {
+  const [isCardClick, setIsCardClick] = useState(false);
+  function handleSidebar() {
+    setIsCardClick(!isCardClick);
+  }
+
   return (
     <>
       <div className="about-section flex-container" id="about-id">
@@ -50,6 +58,11 @@ function About() {
               <span className="transparent-text"> Skills</span> and Web
               <span className="transparent-text"> Experience</span>
             </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
+              provident est sapiente soluta officia aperiam omnis enim
+              asperiores atque.
+            </p>
             <div className="about-skills-list">
               <code>HTML</code>
               <code>Css</code>
@@ -65,7 +78,8 @@ function About() {
               <code>Wordpress Builders</code>
             </div>
             <div className="about-live-sites">
-              <div className="card">
+              <div className="card" onClick={handleSidebar}>
+                <FaCircle className="blinking-dot blink" />
                 <p>Lived Sites</p>
                 <p className="number">10</p>
               </div>
@@ -74,6 +88,7 @@ function About() {
                 <p className="number">15</p>
               </div>
             </div>
+            <Sidebar isCardClick={isCardClick} />
           </div>
         </div>
       </div>
