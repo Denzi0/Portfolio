@@ -1,0 +1,17 @@
+.sidebar-container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 30rem;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+  transform: translatex(320px);
+}
+.sidebar-container.show {
+  opacity: 1;
+  transform: translatex(0);
+}
