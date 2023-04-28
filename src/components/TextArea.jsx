@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TextArea({ labelName, labelID, inputType }) {
+function TextArea({ labelName, labelID, inputType, inputName }) {
   const [inputValue, setInputValue] = useState("");
 
   function handleInput(e) {
@@ -14,6 +14,7 @@ function TextArea({ labelName, labelID, inputType }) {
       <textarea
         type={inputType}
         value={inputValue}
+        name={inputName}
         id={labelID}
         onChange={handleInput}
       />

@@ -1,0 +1,28 @@
+.featured-projects-container {
+  min-height: 50rem;
+  padding: 9rem 0rem;
+}
+
+.featured-projects-container .featured-projects-details {
+  width: 70rem;
+}
+.featured-project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem 0.5rem;
+  grid-template-areas:
+    "gallery-1 gallery-1 gallery-2 gallery-2"
+    "gallery-1 gallery-1 gallery-3 gallery-3";
+}
+.gallery-1 {
+  grid-area: gallery-1;
+  height: 100%;
+  width: 100%;
+}
+.gallery-2 {
+  grid-area: gallery-2;
+}
+.gallery-3 {
+  grid-area: gallery-3;
+}
