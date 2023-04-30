@@ -3,15 +3,28 @@ import image from "../../../assets/images/placeholder.png";
 import Input from "../../../components/Input";
 import TextArea from "../../../components/TextArea";
 import SubmitButton from "../../../components/SubmitButton";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [formData, setFormData] = useState({
+    full_name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setIsSubmitting(true);
+    setIsLoading(true);
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -21,15 +34,23 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alert("message sent");
+          console.log("message sent");
         },
         (error) => {
-          console.log(error.text);
-          alert("message not sent");
+          console.log("message not sent");
         }
-      );
+      )
+      .finally(() => {
+        setFormData({
+          full_name: "",
+          email: "",
+          message: "",
+        });
+        setIsSubmitting(false);
+        setIsLoading(false);
+      });
   };
+
   return (
     <div className="contact-section" id="contact-id">
       <div className="contact-container flex-container-vertical container">
@@ -44,10 +65,22 @@ function Contact() {
         <div className="contact-form">
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-col-1">
-              <Input labelID="fname" inputType="text" inputName="full_name">
+              <Input
+                labelID="fname"
+                inputType="text"
+                inputName="full_name"
+                onChange={handleChange}
+                inputValue={formData.full_name}
+              >
                 Full name
               </Input>
-              <Input labelID="email" inputType="email" inputName="email">
+              <Input
+                labelID="email"
+                inputType="email"
+                inputName="email"
+                onChange={handleChange}
+                inputValue={formData.email}
+              >
                 Email
               </Input>
             </div>
@@ -56,9 +89,11 @@ function Contact() {
               labelID="message"
               inputType="textarea"
               inputName="message"
+              onChange={handleChange}
+              inputValue={formData.message}
             />
-            <SubmitButton buttonClass="btn btn-submit">
-              Submit Message
+            <SubmitButton buttonClass="btn btn-submit" disabled={isSubmitting}>
+              {isLoading ? "Loading..." : "Submit Message"}
             </SubmitButton>
           </form>
         </div>

@@ -1,5 +1,5 @@
 import "./About.css";
-import image from "../../../assets/images/placeholder2.webp";
+import image from "../../../assets/images/user-image.png";
 import {
   FaGithubAlt,
   FaFacebookF,

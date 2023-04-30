@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-function Input({ labelID, inputType, inputName, children }) {
-  const [inputValue, setInputValue] = useState("");
-
-  function handleInput(e) {
-    setInputValue(e.target.value);
-  }
+function Input({
+  labelID,
+  inputType,
+  inputName,
+  inputValue,
+  children,
+  onChange,
+}) {
   return (
     <>
       <div className="form-control">
@@ -19,7 +21,7 @@ function Input({ labelID, inputType, inputName, children }) {
           value={inputValue}
           name={inputName}
           id={labelID}
-          onChange={handleInput}
+          onChange={onChange}
           required
         />
       </div>
