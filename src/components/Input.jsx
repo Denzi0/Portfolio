@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Input({ labelID, inputType, children }) {
+function Input({ labelID, inputType, inputName, children }) {
   const [inputValue, setInputValue] = useState("");
 
   function handleInput(e) {
@@ -17,6 +17,7 @@ function Input({ labelID, inputType, children }) {
           max="255"
           type={inputType}
           value={inputValue}
+          name={inputName}
           id={labelID}
           onChange={handleInput}
           required

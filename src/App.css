@@ -56,10 +56,13 @@ a {
   cursor: pointer;
 }
 img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
   cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
 }
 
 img:hover {
+  opacity: 0.8;
   cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
 }
 /*
@@ -170,7 +173,11 @@ code:hover {
   max-width: 1480px;
   padding: 0 20px;
 }
-
+/* @media only screen and (min-width: 1540px) {
+  .container {
+    max-width: 1480px;
+  }
+} */
 .progress-bar {
   position: fixed;
   top: 0;
