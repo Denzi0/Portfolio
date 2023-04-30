@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-function TextArea({ labelName, labelID, inputType, inputName }) {
-  const [inputValue, setInputValue] = useState("");
-
-  function handleInput(e) {
-    setInputValue(e.target.value);
-  }
+function TextArea({
+  labelName,
+  labelID,
+  inputType,
+  inputName,
+  inputValue,
+  onChange,
+}) {
   return (
     <div className="form-control">
       <label id={labelID}>
@@ -16,7 +18,7 @@ function TextArea({ labelName, labelID, inputType, inputName }) {
         value={inputValue}
         name={inputName}
         id={labelID}
-        onChange={handleInput}
+        onChange={onChange}
       />
     </div>
   );
