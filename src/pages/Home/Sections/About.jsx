@@ -37,7 +37,7 @@ function About() {
               <IconLink iconUrl="#">
                 <FaFacebookF />
               </IconLink>
-              <IconLink>
+              <IconLink iconUrl="https://twitter.com/Denzox44">
                 <FaTwitter />
               </IconLink>
               <IconLink iconUrl="https://www.linkedin.com/in/denzel-lanzaderas-47a9a5212/">

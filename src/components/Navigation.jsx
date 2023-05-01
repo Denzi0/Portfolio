@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import "./Navigation.css";
 import Button from "./Button";
 import React, { useEffect, useState } from "react";
+import resume from "../../src/assets/files/Resume.pdf";
 
 function Navigation() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -70,8 +71,8 @@ function Navigation() {
               </Link>
             </ul>
           </div>
-          <Button url="tel:09262133932" buttonType={"btn-fill"}>
-            Let's Talk !
+          <Button url={resume} buttonType={"btn-fill"}>
+            View Resume
           </Button>
         </div>
       </div>
