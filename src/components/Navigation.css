@@ -1,13 +1,18 @@
+.navigation-section {
+  background-color: #fff;
+  padding: 0 10rem;
+}
+
 .navigation-container {
   display: flex;
   justify-content: space-between;
   min-height: 10vh;
-  background-color: #fff;
+
   z-index: 9;
   align-items: center;
 }
 
-.navigation-container.fixed {
+.navigation-section.fixed {
   position: fixed;
   top: 0;
   left: 0;
