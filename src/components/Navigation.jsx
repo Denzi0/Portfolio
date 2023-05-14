@@ -17,12 +17,10 @@ function Navigation() {
   };
   return (
     <>
-      <div className="navigation-section">
-        <div
-          className={`container navigation-container ${
-            scrollPosition > 300 ? "fixed" : ""
-          }`}
-        >
+      <div
+        className={`navigation-section ${scrollPosition > 300 ? "fixed" : ""}`}
+      >
+        <div className="navigation-container">
           <Link
             to="banner-id"
             spy={true}
