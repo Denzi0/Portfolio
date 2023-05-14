@@ -1,5 +1,7 @@
 import "./About.css";
 import image from "../../../assets/images/user-image.png";
+import aboutSnap from "../../../assets/images/about-snap.png";
+
 import {
   FaGithubAlt,
   FaFacebookF,
@@ -32,7 +34,10 @@ function About() {
               passion for creating beautiful, responsive websites. With over 1/2
               years of experience in the industry, I specialize in creating
               user-friendly, visually appealing websites from start to finish.
-            </p>
+            </p>{" "}
+            <div className="about-snap-image">
+              <img src={aboutSnap}></img>
+            </div>
             <div className="about-details-icon">
               <IconLink iconUrl="#">
                 <FaFacebookF />
@@ -58,11 +63,10 @@ function About() {
               <span className="transparent-text"> Skills</span> and Web
               <span className="transparent-text"> Experience</span>
             </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
-              provident est sapiente soluta officia aperiam omnis enim
-              asperiores atque.
-            </p>
+
+            <div className="about-snap-image">
+              <img src={aboutSnap}></img>
+            </div>
             <div className="about-skills-list">
               <code>HTML</code>
               <code>Css</code>

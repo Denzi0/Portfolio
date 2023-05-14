@@ -15,7 +15,8 @@
 .about-container .about-details-sub {
   font-size: 1.5rem;
   letter-spacing: 0.6rem;
-  color: var(--yellow-color);
+  /* color: var(--yellow-color); */
+  color: var(--main-color);
   text-transform: uppercase;
 }
 .about-container .about-details-icon {

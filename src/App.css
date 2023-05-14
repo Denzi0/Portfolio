@@ -12,7 +12,7 @@
 }
 :root {
   font-size: 62.5%;
-  --main-color: #1b1b1b;
+  --main-color: #22272e;
   --secondary-color: #ffff;
   --selection-color: #fda228;
   --yellow-color: #fda228;
@@ -117,6 +117,7 @@ img {
   max-width: 100%;
 }
 h1 {
+  color: var(--main-color);
   font-family: "Work-sans", sans-serif;
 }
 h2,
@@ -124,6 +125,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--main-color);
   font-family: "Poppins", sans-serif;
 }
 
