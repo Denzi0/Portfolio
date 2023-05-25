@@ -1,46 +1,44 @@
 .banner-container {
   min-height: 90vh;
+  display: flex;
+  align-items: center;
 }
-
+.banner-details,
+.banner-image {
+  flex: 1;
+}
 /* ### Changed cursor to image when hover on banner container #### */
 .banner-container > div {
   cursor: url(/src/assets/images/cursor.svg) 36 36, auto;
 }
 .banner-container p {
-  font-size: 2.8rem;
   margin: 4rem 0;
-  color: var(--main-color);
 }
-.banner-container .banner-details-intro {
-  text-align: center;
-}
+
 .banner-container .banner-details-webDeveloper {
-  color: var(--main-color);
+  color: var(--white-color);
 }
 
 .banner-container h1 {
-  font-size: 11.5rem;
-  font-weight: 700;
+  font-size: 7.5rem;
   line-height: 1;
-  text-align: center;
 }
-
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+.banner-content img {
+  width: 100%;
+}
 .banner-container .banner-logos {
   display: flex;
   gap: 1.5rem;
 }
-.banner-container .banner-logos img {
-  height: auto;
-  width: 6.5rem;
-  object-fit: contain;
-  -webkit-filter: grayscale(95%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(95%);
-}
+
 .banner-container .banner-logos img:hover {
   -webkit-filter: none; /* Safari 6.0 - 9.0 */
   filter: none;
 }
 .banner-container .banner-btns {
-  text-align: center;
   margin-top: 6.5rem;
 }

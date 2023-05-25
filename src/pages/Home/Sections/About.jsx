@@ -1,6 +1,7 @@
 import "./About.css";
-import image from "../../../assets/images/user-image.png";
-import aboutSnap from "../../../assets/images/about-snap.png";
+import Button from "../../../components/Button";
+import { FaBeer } from "react-icons/fa";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 import {
   FaGithubAlt,
@@ -11,7 +12,6 @@ import {
 } from "react-icons/fa";
 import IconLink from "../../../components/IconLink";
 import { useState } from "react";
-import Sidebar from "../../../components/Sidebar";
 
 function About() {
   const [isCardClick, setIsCardClick] = useState(false);
@@ -24,7 +24,6 @@ function About() {
       <div className="about-section flex-container" id="about-id">
         <div className="container about-container flex-container">
           <div className="about-details">
-            <p className="about-details-sub">My Web Development Journey</p>
             <h2>
               Web <span className="transparent-text">Dev</span> and <br />
               Design <span className="transparent-text">Expertise</span>
@@ -34,11 +33,11 @@ function About() {
               passion for creating beautiful, responsive websites. With over 1/2
               years of experience in the industry, I specialize in creating
               user-friendly, visually appealing websites from start to finish.
-            </p>{" "}
-            <div className="about-snap-image">
-              <img src={aboutSnap}></img>
-            </div>
-            <div className="about-details-icon">
+            </p>
+            <Button buttonType={"btn-ghost"} url="contact-id">
+              Explore More Projects
+            </Button>
+            {/* <div className="about-details-icon">
               <IconLink iconUrl="#">
                 <FaFacebookF />
               </IconLink>
@@ -51,48 +50,33 @@ function About() {
               <IconLink iconUrl="https://github.com/Denzi0">
                 <FaGithubAlt />
               </IconLink>
-            </div>
+            </div> */}
           </div>
-          <div className="about-image">
-            <img src={image}></img>
-          </div>
+
           <div className="about-details2">
-            <p className="about-details-sub">Technical and Soft Skills</p>
-            <h2>
-              My
-              <span className="transparent-text"> Skills</span> and Web
-              <span className="transparent-text"> Experience</span>
-            </h2>
-
-            <div className="about-snap-image">
-              <img src={aboutSnap}></img>
+            <div className="about-card">
+              <p>Wordpress</p>
+              <h3>JKC Real Estates</h3>
+              <a href="" className="about-link">
+                <span>View Live Site</span> <BsFillArrowRightCircleFill />
+              </a>
             </div>
-            <div className="about-skills-list">
-              <code>HTML</code>
-              <code>Css</code>
-              <code>Bootstrap</code>
-              <code>Tailwind</code>
-              <code>Javascript</code>
-              <code>React</code>
-              <code>Vue</code>
-              <code>Laravel</code>
-              <code>MySQL</code>
-
-              <code>Wordpress</code>
-              <code>Wordpress Builders</code>
+            <div className="about-card">
+              <p>React and Laravel</p>
+              <h3>De Oro Mediko</h3>
+              <a href="" className="about-link">
+                <span>View Live Site</span>
+                <BsFillArrowRightCircleFill />
+              </a>
             </div>
-            <div className="about-live-sites">
-              <div className="card" onClick={handleSidebar}>
-                <FaCircle className="blinking-dot blink" />
-                <p>Lived Sites</p>
-                <p className="number">10</p>
-              </div>
-              <div className="card">
-                <p>Projects</p>
-                <p className="number">15</p>
-              </div>
+            <div className="about-card">
+              <p>React and Laravel</p>
+              <h3>BTA Ballina</h3>
+              <a href="" className="about-link">
+                <span>View Live Site</span>
+                <BsFillArrowRightCircleFill />
+              </a>
             </div>
-            <Sidebar isCardClick={isCardClick} />
           </div>
         </div>
       </div>
