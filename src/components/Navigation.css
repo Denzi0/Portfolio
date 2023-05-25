@@ -1,6 +1,9 @@
 .navigation-section {
-  background-color: #fff;
+  background-color: var(--main-color);
   padding: 0 10rem;
+  z-index: 99;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .navigation-container {
@@ -30,7 +33,7 @@
 }
 .navigation-container .navigation-logo {
   font-size: 4rem;
-  color: var(--main-color);
+  color: var(--white-color);
   flex: 1;
 }
 
@@ -38,4 +41,5 @@
   margin-right: 6rem;
   font-size: 1.7rem;
   font-weight: 500;
+  color: var(--light-dark);
 }

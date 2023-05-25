@@ -15,7 +15,8 @@
 .about-container .about-details-sub {
   font-size: 1.5rem;
   letter-spacing: 0.6rem;
-  color: var(--yellow-color);
+  /* color: var(--yellow-color); */
+  color: var(--main-color);
   text-transform: uppercase;
 }
 .about-container .about-details-icon {
@@ -23,61 +24,38 @@
   gap: 2rem;
   margin-top: 2rem;
 }
-.about-container .about-image img {
-  height: 50rem;
-  object-fit: cover;
+.about-card {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-.about-container .about-skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+.about-card h3 {
+  font-weight: normal;
+  font-size: 3rem;
 }
-.about-container .about-live-sites {
+.about-card p {
+  text-transform: uppercase;
+  color: var(--light-dark);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-card a {
   margin-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: inline-block;
+  padding: 0.3rem 1rem;
 }
-.about-container .about-live-sites .card p {
-  font-weight: bold;
-}
-.about-container .about-live-sites .card {
+.about-card a:hover {
   background-color: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 0.2rem;
-  width: 12rem;
-  position: relative;
+  color: var(--main-color);
 }
-.about-container .about-live-sites .number {
-  font-size: 4rem;
+.about-card svg {
+  display: inline-block;
 }
-.about-container .about-details {
-  margin-bottom: 20rem;
-}
-.about-container .about-details2 {
-  margin-top: 20rem;
-}
-
-.blinking-dot {
-  color: #ff4141;
-  text-shadow: 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #f00,
-    0 0 60px #f00, 0 0 70px #f00, 0 0 80px #f00;
-  font-size: 0.8rem;
-  position: absolute;
-  right: 0.8rem;
-  top: 0.8rem;
-}
-
-.blink {
-  animation: blinker 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-}
-@keyframes blinker {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.about-card a {
+  margin-top: 3rem;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 15rem;
+  padding: 0.5rem;
 }

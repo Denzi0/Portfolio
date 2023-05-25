@@ -11,9 +11,7 @@ function Input({
   return (
     <>
       <div className="form-control">
-        <label id={labelID}>
-          <small>{children}</small>
-        </label>
+        <label id={labelID}>{children}</label>
         <input
           min="3"
           max="255"

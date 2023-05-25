@@ -1,37 +1,39 @@
 import "./Banner.css";
-import google from "../../../assets/images/google-icon.png";
-import um from "../../../assets/images/university-of-michigan-logo.png";
-import myimage from "../../../assets/images/user-image.jpg";
+import myimage from "../../../assets/images/home.svg";
 import Button from "../../../components/Button";
 function Banner() {
   return (
     <>
-      <div className="banner-container flex-container" id="banner-id">
+      <div className="banner-container" id="banner-id">
         <div className="container">
-          <div className="banner-details">
-            <p className="banner-details-intro">
-              👋 Hi my name is Denzel and I am a
-            </p>
-            <h1 className="banner-details-webDeveloper">Web Developer</h1>
-            <h1 className="banner-details-webDesigner transparent-text">
-              & Web Designer
-            </h1>
-          </div>
-          <div className="banner-more-details flex-container">
-            <p className="banner-logos-based">Based On Philippines</p>
-            <div className="banner-logos">
-              <img src={google} alt="google logo" />
-              <img src={um} alt="university of michigan logo" />
+          <div className="banner-content">
+            <div className="banner-details">
+              <p className="banner-details-intro">
+                Hi my name is Denzel and I am a
+              </p>
+              <h1 className="banner-details-webDeveloper">Web Developer</h1>
+              <h1 className="banner-details-webDesigner transparent-text">
+                & Web Designer
+              </h1>
+              <p>
+                I'm an experienced and dedicated web deverloper/designer with a
+                passion for creating beautiful, responsive websites. With over
+                1/2 years of experience in the industry, I specialize in
+                creating user-friendly, visually appealing websites from start
+                to finish.
+              </p>
+              <div className="banner-btns">
+                <Button buttonType={"btn-fill"} url="projects-id">
+                  Discover my work
+                </Button>
+                <Button buttonType={"btn-ghost"} url="contact-id">
+                  Need A Developer ?
+                </Button>
+              </div>
             </div>
-          </div>
-          {/* <img src={myimage} /> */}
-          <div className="banner-btns">
-            <Button buttonType={"btn-fill"} url="projects-id">
-              Discover my work
-            </Button>
-            <Button buttonType={"btn-ghost"} url="contact-id">
-              Need A Developer ?
-            </Button>
+            <div className="banner-image">
+              <img src={myimage} />
+            </div>
           </div>
         </div>
       </div>

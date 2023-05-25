@@ -25,6 +25,9 @@
 .contact-form .form-col-1 .form-control {
   flex-grow: 1;
 }
+.contact-form label {
+  color: var(--text-color);
+}
 .contact-form input,
 .contact-form textarea {
   display: block;
@@ -32,6 +35,7 @@
   width: 100%;
   border-bottom: 1px solid #000;
   margin: 1.4rem 0rem;
+  padding: 1.2rem;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {

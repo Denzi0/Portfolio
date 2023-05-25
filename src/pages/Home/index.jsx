@@ -12,7 +12,7 @@ function index() {
       <Banner />
       <About />
       <FeaturedProjects />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       <Footer />
     </>
