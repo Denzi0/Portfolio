@@ -5,21 +5,9 @@ import React, { useEffect, useState } from "react";
 import resume from "../../src/assets/files/Resume.pdf";
 
 function Navigation() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
   return (
     <>
-      <div
-        className={`navigation-section ${scrollPosition > 300 ? "fixed" : ""}`}
-      >
+      <div className="navigation-section">
         <div className="navigation-container">
           <Link
             to="banner-id"
