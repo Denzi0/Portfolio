@@ -1,3 +1,4 @@
+import Card from "../../../components/Card";
 import "./FeaturedProjects.css";
 
 export default function FeaturedProjects() {
@@ -11,6 +12,11 @@ export default function FeaturedProjects() {
             sed aliquid esse exercitationem nulla ipsum eveniet rem, culpa
             voluptatem. Fugit!
           </p>
+          <div className="all-featured-projects">
+            <Card subTitle="Wordpress" title="JKC Real Estates" link="#" />
+            <Card subTitle="Wordpress" title="JKC Real Estates" link="#" />
+            <Card subTitle="Wordpress" title="JKC Real Estates" link="#" />
+          </div>
         </div>
       </div>
       <div className="featured-project-gallery container"></div>

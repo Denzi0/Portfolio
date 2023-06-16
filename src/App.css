@@ -30,6 +30,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
@@ -146,6 +147,7 @@ h4 {
 p {
   font-family: "Nunito Sans", sans-serif;
   color: var(--text-color);
+  font-size: 1.8rem;
 }
 a {
   color: var(--white-color);

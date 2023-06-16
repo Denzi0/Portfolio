@@ -1,56 +1,56 @@
-.about-section {
+.certificates-section {
   height: 90vh;
   padding: 9.5rem 0;
 }
-.about-section .about-container {
+.certificates-section .certificates-container {
   gap: 8rem;
   z-index: 2;
 }
-.about-container .about-details,
-.about-container .about-details2,
-.about-container .about-image {
-  width: 50%;
+.certificates-container .certificates-details,
+.certificates-container .certificates-details2,
+.certificates-container .certificates-image {
+  width: 100%;
   flex-grow: 1;
 }
-.about-container .about-details-sub {
+.certificates-container .certificates-details-sub {
   font-size: 1.5rem;
   letter-spacing: 0.6rem;
   /* color: var(--yellow-color); */
   color: var(--main-color);
   text-transform: uppercase;
 }
-.about-container .about-details-icon {
+.certificates-container .certificates-details-icon {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
-.about-card {
+.certificates-card {
   padding: 4rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-.about-card h3 {
+.certificates-card h3 {
   font-weight: normal;
   font-size: 3rem;
 }
-.about-card p {
+.certificates-card p {
   text-transform: uppercase;
   color: var(--light-dark);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.about-card a {
+.certificates-card a {
   margin-top: 3rem;
   display: inline-block;
   padding: 0.3rem 1rem;
 }
-.about-card a:hover {
+.certificates-card a:hover {
   background-color: #fff;
   color: var(--main-color);
 }
-.about-card svg {
+.certificates-card svg {
   display: inline-block;
 }
-.about-card a {
+.certificates-card a {
   margin-top: 3rem;
   vertical-align: middle;
   display: flex;
@@ -58,22 +58,4 @@
   gap: 1rem;
   width: 15rem;
   padding: 0.5rem;
-}
-
-.box-container {
-  display: flex;
-  gap: 2rem;
-}
-.box {
-  height: 15rem;
-  width: 40rem;
-}
-
-.box-number {
-  font-size: 16rem;
-}
-
-.box-title {
-  font-size: 2rem;
-  text-transform: uppercase;
 }

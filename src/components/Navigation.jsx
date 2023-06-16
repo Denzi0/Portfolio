@@ -7,7 +7,7 @@ import resume from "../../src/assets/files/Resume.pdf";
 function Navigation() {
   return (
     <>
-      <div className="navigation-section">
+      <div className="navigation-section fixed">
         <div className="navigation-container">
           <Link
             to="banner-id"
