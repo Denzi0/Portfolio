@@ -2,6 +2,7 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
+  padding-top: 10vh;
 }
 .banner-details,
 .banner-image {
@@ -41,4 +42,9 @@
 }
 .banner-container .banner-btns {
   margin-top: 6.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .banner-image {
+    display: none;
+  }
 }

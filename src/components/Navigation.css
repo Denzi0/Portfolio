@@ -1,6 +1,6 @@
 .navigation-section {
   background-color: var(--main-color);
-  padding: 0 10rem;
+  padding: 0 2rem;
   z-index: 99;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -9,7 +9,7 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  min-height: 10vh;
+  min-height: 8vh;
   z-index: 9;
   align-items: center;
 }
@@ -21,7 +21,43 @@
   right: 0;
   animation: slide-down 0.5s;
 }
+.mobile-menu {
+  color: #fff;
+  font-size: 31px;
+  margin-left: 4rem;
+  display: none;
+}
+.navigation-item.active {
+  color: #fbbc04 !important;
+}
 
+@media only screen and (max-width: 992px) {
+  .mobile-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .navigation-links {
+    display: none;
+  }
+  .navigation-links.open {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    padding: 30px;
+    top: 80px;
+    flex-direction: column;
+    display: flex;
+    background: #202124;
+    text-align: right;
+  }
+  .navigation-container .navigation-links a {
+    padding: 1rem 0;
+    margin-right: 0;
+  }
+}
 @keyframes slide-down {
   from {
     transform: translateY(-100%);

@@ -1,0 +1,37 @@
+.card {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  flex: 1;
+  margin-right: 1rem;
+}
+.card h3 {
+  font-weight: normal;
+  font-size: 3rem;
+}
+.card p {
+  text-transform: uppercase;
+  color: var(--light-dark);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card a {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+}
+.card a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+.card svg {
+  display: inline-block;
+}
+.card a {
+  margin-top: 3rem;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 15rem;
+  padding: 0.5rem;
+}

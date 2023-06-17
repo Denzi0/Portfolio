@@ -41,3 +41,7 @@
 .contact-form textarea:focus {
   outline: none;
 }
+
+.contact-form .thankyou-text {
+  text-align: center;
+}

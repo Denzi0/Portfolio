@@ -224,3 +224,37 @@ code:hover {
 .bg-gray {
   border: 0.5rem solid var(--white-color);
 }
+
+/* APPLICATION RESPONSIVESNESS  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .banner-container h1 {
+    font-size: 5.5rem;
+  }
+
+  .banner-details {
+    width: 100%;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .banner-content img {
+    width: 100%;
+  }
+}

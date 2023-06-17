@@ -1,5 +1,5 @@
 .about-section {
-  height: 90vh;
+  min-height: 70vh;
   padding: 9.5rem 0;
 }
 .about-section .about-container {
@@ -24,41 +24,6 @@
   gap: 2rem;
   margin-top: 2rem;
 }
-.about-card {
-  padding: 4rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-.about-card h3 {
-  font-weight: normal;
-  font-size: 3rem;
-}
-.about-card p {
-  text-transform: uppercase;
-  color: var(--light-dark);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.about-card a {
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 0.3rem 1rem;
-}
-.about-card a:hover {
-  background-color: #fff;
-  color: var(--main-color);
-}
-.about-card svg {
-  display: inline-block;
-}
-.about-card a {
-  margin-top: 3rem;
-  vertical-align: middle;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 15rem;
-  padding: 0.5rem;
-}
 
 .box-container {
   display: flex;
@@ -76,4 +41,24 @@
 .box-title {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+/* .box-1,
+.box-title-1 {
+  color: #ea4335;
+}
+.box-2,
+.box-title-2 {
+  color: #fbbc04;
+}
+.box-3,
+.box-title-3 {
+  color: #4285f4;
+} */
+@media only screen and (max-width: 992px) {
+  .about-container .about-details,
+  .about-container .about-details2,
+  .about-container .about-image {
+    width: 100%;
+  }
 }
