@@ -12,7 +12,7 @@ function App() {
   });
   return (
     <div>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={20}
         outerSize={20}
         color="255, 255, 255"
@@ -32,7 +32,7 @@ function App() {
           "button",
           ".link",
         ]}
-      />
+      /> */}
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Home />
     </div>

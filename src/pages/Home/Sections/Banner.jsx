@@ -22,7 +22,7 @@ function Banner() {
                 to finish.
               </p>
               <div className="banner-btns">
-                <Button buttonType={"btn-fill"} url="projects-id">
+                <Button buttonType={"btn-fill btn-discover"} url="project-id">
                   Discover my work
                 </Button>
                 <Button buttonType={"btn-ghost btn-developer"} url="contact-id">

@@ -48,3 +48,12 @@
     display: none;
   }
 }
+@media only screen and (max-width: 480px) {
+  .btn-developer {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .btn-discover {
+    width: 100%;
+  }
+}

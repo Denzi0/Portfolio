@@ -215,6 +215,7 @@ code:hover {
   padding: 1.5rem 2.5rem;
   margin: 0 1rem;
   transition: 0.3s ease-in;
+  text-align: center;
 }
 .btn:hover {
   padding: 1.5rem 4.5rem;
