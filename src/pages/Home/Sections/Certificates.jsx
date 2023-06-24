@@ -9,25 +9,38 @@ function Certificate() {
       <div className="certificates-section flex-container" id="certificates-id">
         <div className="container certificates-container flex-container">
           <div className="certificates-details">
-            <h2>
-              Web <span className="transparent-text">Dev</span> and <br />
-              Design <span className="transparent-text">Expertise</span>
-            </h2>
+            <h2>Certificates section</h2>
             <p className="certificates-more-details">
-              I'm an experienced and dedicated web deverloper/designer with a
-              passion for creating beautiful, responsive websites. With over 1/2
-              years of experience in the industry, I specialize in creating
-              user-friendly, visually appealing websites from start to finish.
+              Here, I proudly showcase my achievements and certifications from
+              Coursera, where I have honed my skills and expanded my knowledge
+              in various domains. These certificates validate my commitment to
+              continuous learning and my dedication to staying at the forefront
+              of industry trends
             </p>
-            <Button buttonType={"btn-ghost"} url="contact-id">
+            <Button buttonType={"btn-ghost btn-certificates"} url="contact-id">
               Explore More Projects
             </Button>
           </div>
 
           <div className="certificates-details2">
-            <Card subTitle="Wordpress" title="JKC Real Estates" link="#" />
-            <Card subTitle="React and Laravel" title="De Oro Mediko" link="#" />
-            <Card subTitle="React and Laravel" title="De Oro Mediko" link="#" />
+            <Card
+              subTitle="Python"
+              title="Crash Course on Python"
+              link="https://coursera.org/share/9ba7236b7327d919b241952f7a425a20"
+              linkName="My Certificate"
+            />
+            <Card
+              subTitle="Google Ui/Ux"
+              title="Create High-Fidelity Designs and Prototypes in Figma"
+              link="https://coursera.org/share/ecc07f545627041089dd91e9805610db"
+              linkName="My Certificate"
+            />
+            <Card
+              subTitle="University of Michigan"
+              title="Building Database Application in PHP"
+              link="https://coursera.org/share/904c7ea719a612fa826ba36f5cf73501"
+              linkName="My Certificate"
+            />
           </div>
         </div>
       </div>

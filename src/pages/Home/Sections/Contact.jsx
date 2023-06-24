@@ -10,6 +10,7 @@ function Contact() {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isDoneSubmit, setDoneSubmit] = useState(false);
 
   const [formData, setFormData] = useState({
     full_name: "",
@@ -48,6 +49,7 @@ function Contact() {
         });
         setIsSubmitting(false);
         setIsLoading(false);
+        setDoneSubmit(true);
       });
   };
 
@@ -63,39 +65,48 @@ function Contact() {
           </p>
         </div>
         <div className="contact-form">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="form-col-1">
-              <Input
-                labelID="fname"
-                inputType="text"
-                inputName="full_name"
+          {!isDoneSubmit ? (
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="form-col-1">
+                <Input
+                  labelID="fname"
+                  inputType="text"
+                  inputName="full_name"
+                  onChange={handleChange}
+                  inputValue={formData.full_name}
+                >
+                  Full name
+                </Input>
+                <Input
+                  labelID="email"
+                  inputType="email"
+                  inputName="email"
+                  onChange={handleChange}
+                  inputValue={formData.email}
+                >
+                  Email
+                </Input>
+              </div>
+              <TextArea
+                labelName="Message"
+                labelID="message"
+                inputType="textarea"
+                inputName="message"
                 onChange={handleChange}
-                inputValue={formData.full_name}
+                inputValue={formData.message}
+              />
+              <SubmitButton
+                buttonClass="btn btn-submit"
+                disabled={isSubmitting}
               >
-                Full name
-              </Input>
-              <Input
-                labelID="email"
-                inputType="email"
-                inputName="email"
-                onChange={handleChange}
-                inputValue={formData.email}
-              >
-                Email
-              </Input>
-            </div>
-            <TextArea
-              labelName="Message"
-              labelID="message"
-              inputType="textarea"
-              inputName="message"
-              onChange={handleChange}
-              inputValue={formData.message}
-            />
-            <SubmitButton buttonClass="btn btn-submit" disabled={isSubmitting}>
-              {isLoading ? "Loading..." : "Submit Message"}
-            </SubmitButton>
-          </form>
+                {isLoading ? "Loading..." : "Submit Message"}
+              </SubmitButton>
+            </form>
+          ) : (
+            <p className="thankyou-text">
+              Thank you I will be in touch with you soon !
+            </p>
+          )}
         </div>
       </div>
     </div>

@@ -13,9 +13,13 @@
 .btn-fill {
   background-color: var(--white-color);
   color: var(--main-color);
+  border: 0.2rem solid var(--white-color);
 }
 .btn-ghost {
   color: var(--white-color);
   border: 0.2rem solid var(--white-color);
-  margin: 0 1rem;
+}
+
+.btn-developer {
+  margin-left: 1rem;
 }

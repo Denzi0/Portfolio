@@ -718,6 +718,11 @@ prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+react-animated-cursor@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-animated-cursor/-/react-animated-cursor-2.7.0.tgz#caf56f3ff3ce47f5fd1f4ba3622ebf7d137eb274"
+  integrity sha512-l6A0aVLBC+XmNbYWfzdkvV/OBC5h4KjpUiLUvqXNOrniGr4XSCrVA225XNBpIpwtalzOPMwj5DYUxsoKoI02Bw==
+
 react-countup@^6.4.2:
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-6.4.2.tgz#cf8564c9381958a36c7c25f7c0769f7a472e4c99"

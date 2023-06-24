@@ -1,5 +1,5 @@
 .certificates-section {
-  height: 90vh;
+  min-height: 90vh;
   padding: 9.5rem 0;
 }
 .certificates-section .certificates-container {
@@ -58,4 +58,7 @@
   gap: 1rem;
   width: 15rem;
   padding: 0.5rem;
+}
+.certificates-more-details {
+  margin-bottom: 2rem;
 }
