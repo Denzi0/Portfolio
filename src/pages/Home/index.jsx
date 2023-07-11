@@ -5,7 +5,6 @@ import Certificates from "./Sections/Certificates";
 import Contact from "./Sections/Contact";
 import FeaturedProjects from "./Sections/FeaturedProjects";
 import Footer from "./Sections/Footer";
-import Projects from "./Sections/Projects";
 function index() {
   return (
     <>
@@ -14,7 +13,6 @@ function index() {
       <About />
       <Certificates />
       <FeaturedProjects />
-      {/* <Projects /> */}
 
       <Contact />
       <Footer />

@@ -45,13 +45,13 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     position: absolute;
     right: 0px;
-    width: 250px;
+    width: 100%;
     padding: 30px;
     top: 80px;
     flex-direction: column;
     display: flex;
     background: #202124;
-    text-align: right;
+    text-align: left;
   }
   .navigation-container .navigation-links a {
     padding: 1rem 0;

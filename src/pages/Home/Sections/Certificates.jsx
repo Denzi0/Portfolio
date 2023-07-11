@@ -9,7 +9,10 @@ function Certificate() {
       <div className="certificates-section flex-container" id="certificates-id">
         <div className="container certificates-container flex-container">
           <div className="certificates-details">
-            <h2>Certificates section</h2>
+            <h2>
+              Certificates <br />
+              section
+            </h2>
             <p className="certificates-more-details">
               Here, I proudly showcase my achievements and certifications from
               Coursera, where I have honed my skills and expanded my knowledge

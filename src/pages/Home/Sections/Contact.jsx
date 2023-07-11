@@ -1,5 +1,4 @@
 import "./Contact.css";
-import image from "../../../assets/images/placeholder.png";
 import Input from "../../../components/Input";
 import TextArea from "../../../components/TextArea";
 import SubmitButton from "../../../components/SubmitButton";
